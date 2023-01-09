@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.button__cta {
+	display: inline-block;
+	color: $cream;
+	font-size: rem(14);
+	font-weight: 700;
+	padding: rem(8) rem(28);
+	border-radius: rem(28);
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+
+	@include breakpoint(medium) {
+		font-size: rem(16);
+		padding: rem(14) rem(45);
+	}
+
+	&--1 {
+		background: $black;
+
+		&:hover {
+			background: $blue;
+		}
+	}
+
+	&--2 {
+		background: $lightRed;
+
+		&:hover {
+			background: $yellow;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+html {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+	min-height: 100vh;
+  background-color: $cream;
+  font-size: rem(16);
+  line-height: rem(26);
+  color: $gray;
+  font-family: $font; 
+
+  @include breakpoint(medium) {
+    font-size: rem(18);
+    line-height: rem(28);
+  }
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+img, svg, video, picture {
+  display: block;
+  max-width: 100%;
+}

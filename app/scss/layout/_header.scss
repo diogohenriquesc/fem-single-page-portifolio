@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.header {
+	margin-top: rem(16);
+	margin-bottom: rem(32);
+
+  @include breakpoint(medium) {
+    margin-top: rem(35);
+    margin-bottom: rem(65);
+  }
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: block;
+		width: rem(48);
+		height: rem(48);
+
+    @include breakpoint(medium) {
+      width: rem(64);
+      height: rem(64);
+    }
+	}
+}

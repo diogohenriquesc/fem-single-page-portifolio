@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.card {
+  color: $white;
+  padding: rem(24);
+  border-radius: rem(8);
+  font-size: rem(24);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  img {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,109 @@
+@use '../abstracts' as *;
+
+.intro {  
+  margin-bottom: rem(100);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(120);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(136);
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: rem(16);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem(27);
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: rem(23);
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: rem(32);
+    padding: 0 rem(30);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem(64);
+      padding: 0 rem(58.5);
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: rem(80);
+      padding: 0 rem(200);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: rem(24);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      'design design'
+      'uiux apps'
+      'illustration illustration'
+      'photography photography'
+      'motion motion';
+
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: 
+        'design design uiux apps'
+        'design design illustration illustration'
+        'photography photography motion motion';
+    }
+
+    @include breakpoint(large) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: 
+      'design design uiux apps photography photography'
+      'design design illustration illustration motion motion';
+    }
+  }
+
+  &__card {
+    &:nth-child(1) {
+      grid-area: design;
+      background: $blue;
+      gap: rem(94);
+    }
+
+    &:nth-child(2) {
+      grid-area: uiux;
+      background: $yellow;
+      gap: rem(40);
+    }
+
+    &:nth-child(3) {
+      grid-area: apps;
+      background: $pink;
+      gap: rem(40);
+    }
+
+    &:nth-child(4) {
+      grid-area: illustration;
+      background: $lightRed;
+      gap: rem(16);
+    }
+
+    &:nth-child(5) {
+      grid-area: photography;
+      background: $cyan;
+      gap: rem(40);
+    }
+
+    &:nth-child(6) {
+      grid-area: motion;
+      background: $purple;
+      gap: rem(16);
+    }
+  }
+}

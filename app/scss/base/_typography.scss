@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	color: $black;
+}
+
+h1 {
+	font-size: rem(36);
+	line-height: rem(45);
+
+	@include breakpoint(medium) {
+		font-size: rem(44);
+		line-height: rem(55);
+	}
+
+	@include breakpoint(large) {
+		font-size: rem(56);
+		line-height: rem(71);
+	}
+}
+
+h2 {
+	font-size: rem(26);
+	line-height: rem(32.76);
+
+	@include breakpoint(medium) {
+		font-size: rem(32);
+		line-height: rem(40);
+	}
+
+	@include breakpoint(medium) {
+		font-size: rem(40);
+		line-height: rem(50.4);
+	}
+}
+
+h3 {
+	font-size: rem(32);
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}

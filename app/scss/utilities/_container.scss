@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.container {
+  max-width: rem(1189);
+  margin: 0 auto;
+  padding: 0 rem(16);
+
+  @include breakpoint(medium) {
+    padding: 0 rem(39);
+  }
+}

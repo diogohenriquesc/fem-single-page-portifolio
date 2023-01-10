@@ -2,15 +2,53 @@
 
 .about {
   text-align: center;
+  margin-bottom: rem(100);
+
+  @include breakpoint(medium) {
+    text-align: left;
+    margin-bottom: rem(120);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(55);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(88);
+    gap: rem(125);
+  }
+
 
   &__picture {
     max-width: rem(300);
     margin: 0 auto;
     margin-bottom: rem(40);
+
+    @include breakpoint(medium) {
+      max-width: rem(364);
+      margin-bottom: 0;
+      margin-left: rem(-85);
+    }
+
+    @include breakpoint(large) {
+      max-width: rem(445);
+      margin-left: auto;
+    }
   }
 
   &__title {
     margin-bottom: rem(24);
+
+    @include breakpoint(large) {
+      margin-bottom: rem(34);
+    }
   }
 
+  &__paragraph {
+    margin-bottom: rem(24);
+
+    @include breakpoint(large) {
+      margin-bottom: rem(32);
+    }
+  }
 }

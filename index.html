@@ -13,9 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="./dist/main.css">
 
-  <!-- <script defer src="./dist/script.js"></script> -->
+  <!-- JavaScript -->
+  <script defer src="./dist/script.js"></script>
 
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
@@ -25,7 +26,7 @@
     <nav>
       <ul class="header__nav">
         <li class="header__item">
-          <a href="/" class="header__logo">
+          <a href="/" class="header__logo logo">
             <img src="./assets/logo.svg" alt="Logo">
           </a>
         </li>
@@ -101,7 +102,63 @@
         <a href="#" class="button__cta button__cta--2">Free Consultation</a>
       </div>
     </section>
+
+    <section class="work">
+      <h3 class="work__title">My Work</h3>
+
+      <div class="carousel" aria-label="carousel">
+
+        <div class="carousel__slides">
+          <div class="carousel__slide" role="group" aria-label="slide 1 of 5">
+            <img class="carousel__image" src="./assets/image-slide-1.jpg" alt="Desing number 1">
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="slide 2 of 5">
+            <img class="carousel__image" src="./assets/image-slide-2.jpg" alt="Desing number 2">
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="slide 3 of 5">
+            <img class="carousel__image" src="./assets/image-slide-3.jpg" alt="Desing number 3">
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="slide 4 of 5">
+            <img class="carousel__image" src="./assets/image-slide-4.jpg" alt="Desing number 4">
+          </div>
+
+          <div class="carousel__slide" role="group" aria-label="slide 5 of 5">
+            <img class="carousel__image" src="./assets/image-slide-5.jpg" alt="Desing number 5">
+          </div>
+        </div>
+
+
+        <button class="carousel__button prev" aria-label="Previous slide">
+          <img src="./assets/icon-arrow-left.svg" alt="Left arrow">
+        </button>
+        <button class="carousel__button next" aria-label="Next slide">
+          <img src="./assets/icon-arrow-right.svg" alt="Right arrow">
+        </button>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <div class="contact__wrapper">
+        <div class="contact__text">
+          <h2 class="contact__title">Book a call with me</h2>
+          <p class="contact__paragraph">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free
+          consultation. Then we can move forward from there.</p>
+        </div>
+        <a href="#" class="contact__button button__cta button__cta--2">Free Consultation</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer container">
+    <a href="/" class="footer__logo logo">
+      <img src="./assets/logo.svg" alt="Logo">
+    </a>
+
+    <a href="/" class="button__cta button__cta--1">Free Consultation</a>
+  </footer>
 
   <!-- Free Consultation
 

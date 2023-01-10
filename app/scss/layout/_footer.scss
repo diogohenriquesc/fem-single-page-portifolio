@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(32);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(56);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(64);
+  }
+}

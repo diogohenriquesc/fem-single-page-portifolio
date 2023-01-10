@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.contact {
+  margin-bottom: rem(39);
+  
+  @include breakpoint(medium) {
+    margin-bottom: rem(56);
+  }
+
+	&__wrapper {
+		border-radius: rem(10);
+		padding: rem(48) rem(24);
+		color: $cream;
+		text-align: center;
+		background-color: $black;
+
+		@include breakpoint(medium) {
+			padding: rem(56) rem(75) rem(64);
+		}
+
+		@include breakpoint(large) {
+			padding: rem(81) rem(65);
+			text-align: left;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: rem(182);
+
+		}
+	}
+
+	&__title {
+		color: $cream;
+		margin-bottom: rem(24);
+	}
+
+	&__paragraph {
+		margin-bottom: rem(24);
+
+		@include breakpoint(large) {
+			margin-bottom: 0;
+		}
+	}
+
+  &__button {
+    flex-shrink: 0;
+  }
+}

@@ -19,7 +19,7 @@ body {
   font-size: rem(16);
   line-height: rem(26);
   color: $gray;
-  font-family: $font; 
+  font-family: $font;
 
   @include breakpoint(medium) {
     font-size: rem(18);

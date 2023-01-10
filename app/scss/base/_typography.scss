@@ -31,14 +31,18 @@ h2 {
 		line-height: rem(40);
 	}
 
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		font-size: rem(40);
 		line-height: rem(50.4);
 	}
 }
 
 h3 {
-	font-size: rem(32);
+	font-size: rem(24);
+
+	@include breakpoint(medium) {
+		font-size: rem(32);
+	}
 }
 
 a,

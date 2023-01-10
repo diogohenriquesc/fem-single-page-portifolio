@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  &__slides {
+    display: flex;
+    gap: rem(15);
+    width: 100%;
+    padding: 0 rem(15);
+    overflow: hidden;
+    margin-bottom: rem(32);
+
+    @include breakpoint(medium) {
+      gap: rem(30);
+      margin-bottom: rem(56);
+    }
+  }
+
+  &__slide {
+    flex: 0 0 rem(270);
+
+    @include breakpoint(medium) {
+      flex: 0 0 rem(540);
+    }
+  }
+
+  &__image {
+    border-radius: rem(10);
+  }
+
+
+	&__button {
+		width: rem(64);
+		height: rem(64);
+		border-radius: 50%;
+		border: none;
+		position: relative;
+		background-color: $black;
+		cursor: pointer;
+		transition: all 200ms ease-in-out;
+
+    & + & {
+      margin-left: rem(16);
+    }
+
+		&:hover, &:focus {
+			background-color: $blue;
+		}
+
+    img {
+      margin: 0 auto;
+    }
+	}
+}

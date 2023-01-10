@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.work {
+  text-align: center;
+  margin-bottom: rem(100);
+
+  @include breakpoint(medium) {
+    margin-bottom: rem(120);
+  }
+
+  @include breakpoint(large) {
+    margin-bottom: rem(88);
+  }
+
+  &__title {
+    margin-bottom: rem(32);
+
+    @include breakpoint(medium) {
+      margin-bottom: rem(56);
+    }
+  }
+}

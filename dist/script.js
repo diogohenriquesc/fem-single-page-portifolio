@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var slides=document.querySelectorAll(".carousel__slide"),buttons=document.querySelectorAll(".carousel__button"),currentItem=0,range=slides.length;buttons.forEach((function(e){e.addEventListener("click",(function(){e.classList.contains("next")?currentItem++:currentItem--,currentItem<0&&(currentItem=0),currentItem>range&&(currentItem=range-1),slides[currentItem].scrollIntoView({inline:"center",behavior:"smooth",block:"nearest"})}))}));
 //# sourceMappingURL=script.js.map
